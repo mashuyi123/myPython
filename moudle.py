@@ -40,3 +40,28 @@ if __name__=='__main__':
 # 代码封装：外部不需要引用的函数全部定义成private，只有外部需要引用的函数才定义为public
 
 # 在Python中，安装第三方模块，是通过包管理工具pip完成的
+# 安装第三方模块命令 pip install Flask等
+# anaconda，Anaconda会把系统Path中的python指向自己自带的Python。
+# Anaconda安装的第三方模块会安装在Anaconda自己的路径下，不影响系统已安装的Python目录
+# Anaconda相当于数十个第三方模块的集合包
+# conda 是 Anaconda 下用于包管理和环境管理的工具，功能上类似 pip
+# conda 会默认加入到环境变量中，因此可直接在命令行窗口运行命令 conda
+
+# 在conda环境中
+# 在 conda 中 anything is a package。conda 本身可以看作是一个包，python 环境可以看作是一个包，anaconda 也可以看作是一个包
+# 更新conda本身
+# conda update conda
+# 更新anaconda 应用
+# conda update anaconda
+# 更新python，假设当前python环境是3.6.1，而最新版本是3.6.2，那么就会升级到3.6.2
+# conda update python
+
+# 在windows的DOS环境中，安装anaconda后要安装引入模块，直接import就可以
+# 模块搜索路径
+# 当我们加载一个模块时，python会在指定路径下搜索对应的py文件，找不到即报错
+# 默认情况下，python解释器会搜索当前目录，所有已安装的 内置模块和第三方模块，搜索路径存放在sys模块的path变量中
+# 自己添加搜索目录：
+# 法一，直接修改sys.path,添加要搜索的目录；(此法运行时修改，运行结束后失效)
+# eg:import sys
+# sys.path.append('/Users/michael/my_py_scripts')
+# 法二，设置环境变量：PYTHONPATH，该环境变量内容会自动被添加到模块搜索路径中。
