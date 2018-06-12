@@ -1,0 +1,1 @@
+python 常见错误类型网站：https://docs.python.org/3/library/exceptions.html#exception-hierarchy
