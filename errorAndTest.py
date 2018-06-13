@@ -24,6 +24,7 @@ print('end...')
 # Python内置的logging模块可以非常容易地记录错误信息
 # 通过配置，logging还可以把错误记录到日志文件里，方便事后排查。
 import logging
+logging.basicConfig(level=logging.INFO)
 
 def foo(s):
 	return 10/int(s)
@@ -39,3 +40,20 @@ main()
 print('end')
 # 抛出错误:因为错误是class，捕获一个错误就是捕获到该class的一个实例。
 # 根据需要，可以定义一个错误的class，选择好继承关系，然后，用raise语句抛出一个错误的实例：
+# 断言assert n != 0:表达式 n != 0应该是True，否则，根据程序运行的逻辑，后面的代码肯定会出错。
+# 如果断言失败，assert语句本身就会抛出AssertionError
+# 启动Python解释器时可以用-O参数来关闭assert($ python -O err.py)
+def assFun(s):
+	n = int(s)
+	assert n != 0, 'n is zero'
+	return 10/n
+def main():
+	foo('0')
+# logging
+s = '0'
+n = int(s)
+logging.info('n = %d' % n)
+print(10 / n)
+# logging允许指定记录信息的级别，有debug，info，warning，error等几个级别
+# Python的调试器pdb，让程序以单步方式运行，可以随时查看运行状态。
+# 为了编写单元测试，我们需要引入Python自带的unittest模块
