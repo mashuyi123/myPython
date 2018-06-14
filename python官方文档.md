@@ -1,0 +1,6 @@
+- python常见错误类型：[https://docs.python.org/3/library/exceptions.html#exception-hierarchy](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+- python官方文档：[https://docs.python.org/3/tutorial/index.html](https://docs.python.org/3/tutorial/index.html)
+- Beautiful Soup库中文文档：[http://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/#](http://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/#)
+- Request库官方文档：[http://docs.python-requests.org/zh_CN/latest/](http://docs.python-requests.org/zh_CN/latest/)
+- Request库快速上手：[http://docs.python-requests.org/zh_CN/latest/user/quickstart.html](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
+- Request库高级用法：[http://docs.python-requests.org/zh_CN/latest/user/advanced.html#advanced](http://docs.python-requests.org/zh_CN/latest/user/advanced.html#advanced)
