@@ -33,8 +33,8 @@ def parse_html(html):
 
 
 def main():
-    #download_url = '//book.jd.com/booktop/0-0-0.html?category=3287-0-0-0-5-1#comfort'
-    download_url = '//book.jd.com/booktop/0-0-0.html?category=20002-0-0-0-10001-1#comfort'
+    download_url = '//book.jd.com/booktop/0-0-0.html?category=3287-0-0-0-5-1#comfort'
+    # download_url = '//book.jd.com/booktop/0-0-0.html?category=20002-0-0-0-10001-1#comfort'
     while download_url != 'javascript:void(0);':
         html = download_page(HTTP_ + download_url)
         download_url = parse_html(html)
