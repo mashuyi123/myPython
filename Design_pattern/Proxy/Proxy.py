@@ -37,3 +37,8 @@ if __name__ == '__main__':
 	p = Proxy('shadowsock','home','Google')
 	p.visit()
 	
+'''
+		2 *** home *** access *** Google
+		1 *** shadowsock *** access ***Google
+		[Finished in 0.1s]
+'''
